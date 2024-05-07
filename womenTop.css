@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Riday';
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+body{
+    background-color: #e3e6f3;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.search {
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.glass:hover{
+    color: #088178;
+}
+
+.search:hover input{
+    width: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav-logo, .logo{
+    font-family: 'Riday';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .a{
+    font-size: 18px;
+    font-family: Trebuchet MS;
+}
+
+.navbar li .a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li:not(:first-child) a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li:not(:first-child) a.active::after, 
+.navbar #nav-select:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a{
+    color: #666666;
+}
+
+.dropdown a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+#section-p1{
+    padding: 10px 115px;
+    padding-bottom: 70px;
+}
+
+.category #ca-box{
+    width: 245px;
+    height: 245px;
+    justify-content: center;
+    padding: 10px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.582);
+    background-image: url(Category/background.png);
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category #ca-box:hover{
+    transform: scale(1.1);
+}
+
+.category #ca-box img{
+    width: 16vw;
+    height: 16vw;
+    justify-content: center;
+}
+
+.category #ca-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.category #ca-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product1{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 40px;
+}
+
+#product1  h2{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-shadow: 1.5px 1px rgba(169, 169, 169, 0.8)
+}
+
+#product1 .pro-container{
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    padding-top: 10px;
+    column-gap: 7vw;
+    padding-left: 118px;
+    padding-bottom: 20px;
+}
+
+#product1 .pro{
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    background-color: #ffffff79;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transform: scale(1.05);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 5px 0;
+}
+
+#product1 .pro .des span{
+    font-family: Cambria;
+    color: #9E9FA5;
+    font-size: 18px;
+}
+
+#product1 .pro .des h5{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #383E48;
+    font-size: 17px;
+    font-family: Tahoma;
+    line-height: 1.5;
+}
+
+#product1 .pro .des .star{
+    font-size: 17px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des .star h6{
+    text-align: right;
+    float: right;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #666666;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#product1 .pro .des .star h6:hover{
+    text-decoration: underline;
+    color: #3652AD;
+    cursor: pointer;
+}
+
+#product1 .pro .des h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #088178;
+}
+
+
+footer{
+    background-color: #ebecf4;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h4{
+    margin: 10px 0px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #9BA4B5;
+}
+
+footer p{
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 10px;
+}
+
+footer .follow h4{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+footer .follow i{
+    color: #9BA4B5;
+    padding-right: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+footer .install{
+    padding-right: 20px;
+}
+
+footer .install .row img{
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+footer .install img{
+    width: 180px;
+    padding-top: 3px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    padding-top: 60px;
+    width: 100%;
+    font-size: 40px;
+    color: #9BABB8;
+    text-align: center;
+}
