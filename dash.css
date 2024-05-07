@@ -1,0 +1,614 @@
+body{
+    background-color: #e3e6f3;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    cursor: pointer;  
+}
+
+.glass:hover{
+    color: #088178;
+}
+
+.search:hover input{
+    width: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav-logo, .logo{
+    font-family: 'Riday';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .a{
+    font-size: 18px;
+    font-family: Trebuchet MS;
+}
+
+.navbar li .a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+.navbar li:not(:first-child) a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li:not(:first-child) a.active::after, 
+.navbar #nav-select:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a{
+    color: #666666;
+}
+
+.dropdown a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar a:hover
+{
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'riday';
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.subbox {
+    height: auto;
+    width: 50vw;
+    padding: 10px;
+    margin-bottom: 100px;
+    margin-top: 50px;   
+}
+
+.subbox::-webkit-scrollbar {
+    display:none;
+}
+
+.sidebar {
+    position: absolute;
+    top: 41.7%;
+    margin-left: 38%;
+    transform: translate(-150%, -40%);
+    padding: 10px;
+    width: 20vw;
+}
+
+.sidebar h2
+{
+    font-family: riday;
+    font-size: 35px;
+}
+
+.purchasehistbutton {
+    background-color: transparent;
+    color: black;
+    padding: 5px px;
+    font-size: 13.8px;
+    cursor: pointer;
+    border: none;
+}
+
+
+.profilediv {
+    background-color: #ffffffa0; 
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 86%; 
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profilediv h1 {
+    font-size: 35px;
+    font-family: riday;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.profilediv h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profilediv p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.profilediv hr {
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Added border for better separation */
+}
+
+.profilediv p:last-child {
+    margin-bottom: 0;
+}
+
+
+.coupondiv {
+    background-color: #ffffffa0; 
+    border-radius: 4px; 
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 88%;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: center; /* Center align the content horizontally */
+    align-items: center; /* Center align the content vertically */
+}
+
+.coupondiv h1
+{
+    font-family: riday;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.couponflexdiv {
+    display: flex;
+    margin-bottom: 76px;
+}
+
+.coupon1 {
+    width: 40%;
+    margin-left: 8%;
+    box-shadow: 2px 2px;
+    background-color: #fff;
+}
+
+.coupon2 {
+    box-shadow: 2px 2px;
+    width: 40%;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+.purchasehistdiv {
+    background-color: #ffffffa0; 
+    border-radius: 4px; 
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0px;
+    height: 500px;
+    overflow-y: scroll; 
+}
+
+.purchasehistdiv::-webkit-scrollbar
+{
+    display:none;
+}
+
+.purchasehistdiv h1 {
+    font-family: riday;
+    font-size: 39px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.product1,
+.product2,
+.product3{
+    box-shadow: 0 0 2px 1px lightgrey;
+    height: 30%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.product1 img,
+.product2 img,
+.product3 img{
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.product1 h3,
+.product2 h3,
+.product3 h3{
+    margin-top: 0px;
+}
+
+.product1info,
+.product2info,
+.product3info{
+    margin-top: 20px;
+    margin-left: -23.5%;
+    text-align: left;
+}
+
+.orderhistorydiv {
+    background-color: #ffffffa0; 
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 90%;
+    margin-top: 5%;
+    height:300px;
+    margin-bottom: 100px;
+}
+
+.orderhistorydiv h1 {
+    margin-top: 50px;
+    font-family: riday;
+    font-size: 40px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.product1,
+.product2,
+.product3 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.product1 h3,
+.product2 h3,
+.product3 h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product1info,
+.product2info,
+.product3info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.purchasehistbutton {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.purchasehistbutton:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+.cardsdiv h1
+{
+    font-family: riday;
+    font-size: 45px;
+    margin-top: 0px;
+}
+
+.cardsdiv {
+    background-color: #ffffffa0; 
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 25%;
+    margin-top: 9%;
+}
+
+.cardsdiv button {
+    background-color: #000; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    box-shadow: 1px 1px 5px #666666;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cardsdiv button:hover {
+    background-color: #555; 
+}
+
+.editprof {
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+    background-color: #ffffffa0; 
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 500px;
+}
+
+.card-header {
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.editprof h1
+{
+    font-family: riday;
+    font-size:40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px; /* Adjust padding for smaller input boxes */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Add spacing at the bottom */
+    font-size: 14px; /* Adjust font size for smaller input boxes */
+}
+
+.form-row {
+    margin-bottom: 20px; /*bottom of each row*/
+}
+
+.form-row .lastnamediv {
+    padding-right: 15px;
+}
+
+.btn-primary {
+    background-color: #f8f8f8; /* Cream color for the button */
+    color: #333; /* Dark text color on cream background */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #cfc4a1; 
+    color: #333;
+}
+
+.savechangesbttn {
+    background-color: #000000; /* Formal blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px #666666;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 2px;
+}
+
+.savechangesbttn:hover {
+    background-color: #ffffff; /* Darker blue color on hover */
+    color: #000000;
+    border-radius: 2px;
+}
+
+footer{
+    background-color: #ebecf4;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h4{
+    margin: 10px 0px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #9BA4B5;
+}
+
+footer p{
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 10px;
+}
+
+footer .follow h4{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+footer .follow i{
+    color: #9BA4B5;
+    padding-right: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+footer .install{
+    padding-right: 20px;
+}
+
+footer .install .row img{
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+footer .install img{
+    width: 180px;
+    padding-top: 3px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    padding-top: 60px;
+    width: 100%;
+    font-size: 40px;
+    color: #9BABB8;
+    text-align: center;
+}
+
+
+
+
+
+
+

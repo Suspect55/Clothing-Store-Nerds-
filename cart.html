@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link rel="stylesheet" href="cart.css"/>
+        <title>Shopping Cart - NERDS.CO</title>
+    </head>
+    <body>
+       
+        <section class="header">
+            <div>
+                <ul class="navbar">
+                    <li class="nav-logo"><a href="index.html">NERDS</a></li>
+                    <li class="a" id="nav-select"><a href="women.html">Women</a>
+                        <ul class="dropdown">
+                            <li><a href="womenTop.html">Tops</a></li>
+                            <li><a href="womenBottom.html">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="a" id="nav-select"><a href="men.html">Men</a>
+                        <ul class="dropdown">
+                            <li><a href="menTop.html">Tops</a></li>
+                            <li><a href="menBottom.html">Bottoms</a></li>
+                        </ul>
+                    </li>
+                    <li class="a"  id="nav-select"><a href="kids.html">Kids</a></li>
+                    <li class="a"  id="nav-select"><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar">
+                    <li class="a search">
+                        <input type="text" placeholder=" Search by keyword">
+                        <i class="fa-solid fa-magnifying-glass glass"></i>
+                    </li>
+                    <li class="a" id="nav-select"><a href="wish.html"><i class="fa-solid fa-heart"></i></a></li>
+                    <li class="a" id="nav-select"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="a" id="nav-select"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+       <div class="bigWrapper">
+
+        <div class="cartTitle">Shopping Cart</div>
+       <div class="mainWrapper">
+        <div class="leftC">
+            <ul class="cartList">
+                <li>
+                    <div class="itemImg"><img src="MenCollection/NERDS Graphic Tee.png"></div>
+                    <div class="itemInfo">
+                        <div class="itemInfoInner">
+                            <div id="nameAndDelete">
+
+                               <div>Nerds Graphic Tee</div>
+                               <div class="delete">
+                                    
+                                    <i class='bx bx-x'></i>
+                                </div>
+                            </div>
+                            <div id="colour">Colour: Mint Green</div>
+                            <div id="size">Size: M</div>
+                            <div id="indiPrice">RM 119.00</div>
+                        </div>
+                        <div class="price">
+                            <div class="quantTag">
+                                Quantity
+                                <select name="quant" id="quant">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                
+                            </div>
+                            <div class="subtotal"> 
+                                <div>Subtotal:</div> 
+                                <p>&nbsp;RM 119.00</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemImg"><img src="WomenCollection/Signature Short Denim Skirt.png"></div>
+                    <div class="itemInfo">
+                        <div class="itemInfoInner">
+                            <div id="nameAndDelete">
+
+                               <div>Signature Short Denim Skirt</div>
+                               <div class="delete">
+                                    
+                                    <i class='bx bx-x'></i>
+                                </div>
+                            </div>
+                            <div id="colour">Colour: Light Indigo</div>
+                            <div id="size">Size: S</div>
+                            <div id="indiPrice">RM 139.00</div>
+                        </div>
+                        <div class="price">
+                            <div class="quantTag">
+                                Quantity
+                                <select name="quant" id="quant">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                
+                            </div>
+                            <div class="subtotal"> 
+                                <div>Subtotal:</div> 
+                                <p>&nbsp;RM 139.00</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemImg"><img src="MenCollection/Signature NERDS Tee.png"></div>
+                    <div class="itemInfo">
+                        <div class="itemInfoInner">
+                            <div id="nameAndDelete">
+
+                               <div>Signature NERDS Tee</div>
+                               <div class="delete">
+                                    
+                                    <i class='bx bx-x'></i>
+                                </div>
+                            </div>
+                            <div id="colour">Colour: Vanta Black</div>
+                            <div id="size">Size: M</div>
+                            <div id="indiPrice">RM 129.00</div>
+                        </div>
+                        <div class="price">
+                            <div class="quantTag">
+                                Quantity
+                                <select name="quant" id="quant">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                
+                            </div>
+                            <div class="subtotal"> 
+                                <div>Subtotal:</div> 
+                                <p>&nbsp;RM 129.00</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemImg"><img src="MenCollection/NERDS Radar Graphic Tee.png"></div>
+                    <div class="itemInfo">
+                        <div class="itemInfoInner">
+                            <div id="nameAndDelete">
+
+                               <div>NERDS Radar Graphic Tee</div>
+                               <div class="delete">
+                                    
+                                    <i class='bx bx-x'></i>
+                                </div>
+                            </div>
+                            <div id="colour">Colour: Galaxy Black</div>
+                            <div id="size">Size: L</div>
+                            <div id="indiPrice">RM 129.00</div>
+                        </div>
+                        <div class="price">
+                            <div class="quantTag">
+                                Quantity
+                                <select name="quant" id="quant">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                
+                            </div>
+                            <div class="subtotal"> 
+                                <div>Subtotal:</div> 
+                                <p>&nbsp;RM 129.00</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="itemImg"><img src="WomenCollection/Signature NERDS Graphic Crop Top.png"></div>
+                    <div class="itemInfo">
+                        <div class="itemInfoInner">
+                            <div id="nameAndDelete">
+
+                               <div>Signature NERDS Graphic Crop Top</div>
+                               <div class="delete">
+                                    
+                                    <i class='bx bx-x'></i>
+                                </div>
+                            </div>
+                            <div id="colour">Colour: Off White</div>
+                            <div id="size">Size: M</div>
+                            <div id="indiPrice">RM 99.00</div>
+                        </div>
+                        <div class="price">
+                            <div class="quantTag">
+                                Quantity
+                                <select name="quant" id="quant">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                
+                            </div>
+                            <div class="subtotal"> 
+                                <div>Subtotal:</div> 
+                                <p>&nbsp;RM 99.00</p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            
+        </div>
+        <div class="rightC">
+            
+            <div class="summary">
+                <div class="summaryInner">
+                    <div class="summaryQuant">Order Summary | 5 item(s)</div>
+                    <div class="summaryInfo">
+                        <div class="summaryInfoInner">
+                            <div>Item(s) total: </div>
+                            <div>RM 615.00</div>
+                        </div>
+                        <div class="summaryInfoInner">
+                            <div>Discount (10%): </div>
+                            <div>RM 61.50</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="summaryTotal">
+                            <div>Subtotal: </div>
+                            <div>RM 553.50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deliveryInfo">
+                    <input type="checkbox">
+                    <label>Place your order before 12pm Same-Day Delivery at certain locations (excluding Weekends and Public Holidays). No delivery fee and minimum spend of RM200 is required.</label>
+            </div>
+            
+            <div class="checkoutButton">
+                <button type="button" onclick="checkout()">Checkout</button>
+            </div>
+            <div class="contShop">
+                <button type="button" onclick="shopping()">Continue Shopping</button>
+            </div>
+        </div>
+       </div>
+       </div>
+
+      <script src="cart.js"></script>
+    </body>
+
+    <footer>
+        <div class="col">
+            <h4 class="logo">NERDS.CO</h4>
+            <p><strong>Address : </strong>1600 Pennsylvania Avenue NW, Washington, DC 20500, United States</p>
+            <p><strong>Phone : </strong>(+60)18 5270 1487 / (+60)18 7896 7878</p>
+            <p><strong>Hours : </strong>10:00 - 20:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="term.html">Terms & Conditions</a>
+        </div>
+    
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="login.html">Sign In</a>
+            <a href="cart.html">View Cart</a>
+            <a href="wish.html">My Wishlist</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="Footer/Appstore.png">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="Footer/payment.png">
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2024, NERDS.CO. All rights reserved.</p>
+        </div>
+    </footer>
+
+</html>

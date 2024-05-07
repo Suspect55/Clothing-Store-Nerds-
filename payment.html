@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Payment - NERDS.CO</title>
+</head>
+
+<body>
+    <h2 style="font-family: riday; font-weight: bold;">NERDS</h2>
+    <div class="maindiv">
+        <form method="post">
+
+        <div class="section">
+            <h4>Contact</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address" required class="name">
+                </div>
+            </div>
+        </div>
+            
+        <div class="section">
+            <h4>Delivery</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" class="name" placeholder="First Name" required oninput="formatInputText(event)">
+                </div>
+                <div class="input_box">
+                    <input type="text" class="name" placeholder="Last Name" required oninput="formatInputText(event)">
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" class="name" placeholder="Address" required oninput="formatInputText(event)">
+                </div>
+            </div>
+                
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Postcode" required>
+                </div>
+                <div class="input_box">
+                    <input type="text" class="name" placeholder="City" required oninput="formatInputText(event)">
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <select name="state" class="name">
+                        <option value="1">Johor</option>
+                        <option value="2">Kedah</option>
+                        <option value="3">Kelantan</option>
+                        <option value="4">Kuala Lumpur</option>
+                        <option value="5">Labuan</option>
+                        <option value="6">Melacca</option>
+                        <option value="7">Negeri Sembilan</option>
+                        <option value="8">Pahang</option>
+                        <option value="9">Penang</option>
+                        <option value="10">Perak</option>
+                        <option value="11">Perlis</option>
+                        <option value="12">Putrajaya</option>
+                        <option value="13">Sabah</option>
+                        <option value="14">Sarawak</option>
+                        <option value="15">Selangor</option>
+                        <option value="16">Terengganu</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Phone" required>
+                </div>
+            </div>
+
+        <div class="section">
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <label for="bc1"><span><i class='bx bxl-mastercard'></i> MasterCard</span></label>
+                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <label for="bc2"><span><i class='bx bxl-paypal'></i> PayPal</span></label>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" class="name" placeholder="Name on Card" required oninput="formatInputText(event)">
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="tel" name="" class="name" placeholder="Card Number" required>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="cvc" class="name"  maxlength="3" placeholder="CVC" required>
+                </div>
+                <div class="input_box">
+                    <input type="text" class="name" name="expDate" placeholder="MM/YY" maxlength="5" oninput="formatExpiryDate(event)" required>                
+                </div>
+            </div>
+        </div>
+            
+
+            <div class="input_group">
+                <div class="input_box">
+                    <br>
+                    <button type="submit" onclick="paid()">PAY NOW</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <br>
+
+    <script src="payment.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="dash.css">
+    <title>Account Details- NERDS.CO</title>
+</head>
+
+<body>
+    <section class="header">
+        <div>
+            <ul class="navbar">
+                <li class="nav-logo"><a href="index.html">NERDS</a></li>
+                <li class="a" id="nav-select"><a href="women.html">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="womenTop.html">Tops</a></li>
+                        <li><a href="womenBottom.html">Bottoms</a></li>
+                    </ul>
+                </li>
+                <li class="a" id="nav-select"><a href="men.html">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="menTop.html">Tops</a></li>
+                        <li><a href="menBottom.html">Bottoms</a></li>
+                    </ul>
+                </li>
+                <li class="a"  id="nav-select"><a href="kids.html">Kids</a></li>
+                <li class="a"  id="nav-select"><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li class="a search">
+                    <input type="text" placeholder=" Search by keyword">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </li>
+                <li class="a" id="nav-select"><a href="wish.html"><i class="fa-solid fa-heart"></i></a></li>
+                <li class="a" id="nav-select"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="a" id="nav-select"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="mainbox"> <!-- this is the whole webpage so ignore this one -->
+        <div class="subbox"> <!-- box which houses the smaller divs -->
+
+            <div class="editprof">
+                <h1>Account Details</h1>
+                <div class="card-body">
+                    <form>
+                        <!-- Form Group (Username) -->
+                        <div class="username-group">
+                            <label class="small mb-1" for="inputUsername">Username</label>
+                            <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username">
+                        </div>
+            
+                        <!-- Personal Information Section -->
+                        <div class="personal-info-section">
+                            <!-- First Name and Last Name Row -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (First Name) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name">
+                                </div>
+                                <!-- Form Group (Last Name) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name">
+                                </div>
+                            </div>
+            
+                            <!-- Organization and Location Row -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (Organization Name) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                    <input class="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name">
+                                </div>
+                                <!-- Form Group (Location) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLocation">Location</label>
+                                    <input class="form-control" id="inputLocation" type="text" placeholder="Enter your location">
+                                </div>
+                            </div>
+            
+                            <!-- Email, Phone, and Birthday Row -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (Email) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                    <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address">
+                                </div>
+                                <!-- Form Group (Phone Number) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Phone number</label>
+                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number">
+                                </div>
+                                <!-- Form Group (Birthday) -->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                    <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Save Changes Button -->
+                        <button class="savechangesbttn" type="button">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>  <!--subbox--> 
+        
+    </div> <!-- mainbox end -->
+
+    <div class="sidebar">
+        <h2>Membership</h2>
+        <p><a href="profile.html">Profile</a></p>
+        <p><a href="coupons.html">Coupons</a></p>
+        <p><a href="purchasehistory.html">Purchase History</a></p>
+        <p><a href="orderhistory.html">Order History</a></p>
+        <h2>Profile Settings</h2>
+        <p><a href="creditdebitcards.html">My Credit/Debit Cards</a></p>
+        <p><a href="editprofile.html">Edit Profile</a></p>
+    </div>
+    
+</body>
+    
+<footer>
+    <div class="col">
+        <h4 class="logo">NERDS.CO</h4>
+        <p><strong>Address : </strong>1600 Pennsylvania Avenue NW, Washington, DC 20500, United States</p>
+        <p><strong>Phone : </strong>(+60)18 5270 1487 / (+60)18 7896 7878</p>
+        <p><strong>Hours : </strong>10:00 - 20:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="term.html">Terms & Conditions</a>
+    </div>
+
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="login.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="wish.html">My Wishlist</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="Footer/Appstore.png">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="Footer/payment.png">
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2024, NERDS.CO. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

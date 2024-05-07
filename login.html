@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login - NERDS.CO</title>
+</head>
+<body>
+
+    <section class="header">
+        <div>
+            <ul class="navbar">
+                <li class="nav-logo"><a href="index.html">NERDS</a></li>
+                <li class="a" id="nav-select"><a href="women.html">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="womenTop.html">Tops</a></li>
+                        <li><a href="womenBottom.html">Bottoms</a></li>
+                    </ul>
+                </li>
+                <li class="a" id="nav-select"><a href="men.html">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="menTop.html">Tops</a></li>
+                        <li><a href="menBottom.html">Bottoms</a></li>
+                    </ul>
+                </li>
+                <li class="a"  id="nav-select"><a href="kids.html">Kids</a></li>
+                <li class="a"  id="nav-select"><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="navbar">
+                <li class="a search">
+                    <input type="text" placeholder=" Search by keyword">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </li>
+                <li class="a" id="nav-select"><a href="wish.html"><i class="fa-solid fa-heart"></i></a></li>
+                <li class="a" id="nav-select"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="a" id="nav-select"><a class="active" href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo">NERDS</h2>
+            <div class="text-item">
+                <h2>Welcome Back! <br><span>
+                    Ready To Shop For More? 
+                </span></h2>
+                <p>Stay ahead of the style curve with our latest CNY arrivals!!!!</p>
+                <div class="social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div><br><br><br><br>
+            <span class="COPYRIGHT">&copy; 2024, NERDS.CO. All rights reserved.</span>
+        </div>
+    
+        <div class="login-section">
+            <div class="form-box login">
+                <form name="Login"  onsubmit="return UserDashboard()" action="profile.html">
+                    <i class="fa-solid fa-circle-user user"></i>
+                    <h2>Sign In</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" name="Email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" name="Password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Remember Me</label>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <button class="btn" onclick="UserDashboard();">Login</button>
+                    <div class="create-account">
+                        <p>Don't have an account? <a href="registration.html" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <script src="login.js"></script>
+        </div>
+    </div>
+</body>
+</html>

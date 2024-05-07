@@ -1,0 +1,429 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: riday;
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.search {
+    display: flex;
+    cursor: pointer;  
+}
+
+.glass:hover{
+    color: #088178;
+}
+
+.search:hover input{
+    width: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav-logo, .logo{
+    font-family: 'Riday';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .a{
+    font-size: 18px;
+    font-family: Trebuchet MS;
+}
+
+.navbar li .a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+.navbar li:not(:first-child) a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li:not(:first-child) a.active::after, 
+.navbar #nav-select:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a{
+    color: #666666;
+}
+
+.dropdown a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+.bigpic {
+    position: relative;
+    background-image: url('AboutUs/girlmodel.jpg'), url('AboutUs/femalemodel4.jpg'), url('AboutUs/tuxedomodel.jpg'), url('AboutUs/sweatermodel.jpg'), url('AboutUs/nerdslogo.png');
+    background-size: 30% 300px, 30% 300px, 30% 300px, 30% 300px, 11% 40px;
+    background-position: left top, right top, left bottom, right bottom, center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 89vh;
+    margin-top: 1px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Added for positioning */
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.about-us-button {
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1px;
+}
+
+.about-us-button:hover {
+    background-color:transparent;
+}
+
+.ceo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 5px;
+    scroll-margin-top:40px;
+}
+
+.ceo-image {
+    height: 130px;
+    border-radius: 180px;
+}
+
+.ceo-details {
+    max-width: 90%;
+}
+
+.ceo-details h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: riday;
+}
+
+.ceo-details p {
+    font-size: 16px;
+    color: #555; /* Adjust text color as needed */
+}
+
+img
+{
+    size: 50px 50px;
+}
+
+.discmore {
+    position: absolute;
+    bottom: 1px;
+    left: 50%; 
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.discover-more {
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-icon:hover{
+   color: #B4B4B8;
+}
+
+
+.boxcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; 
+    width: 80.27vw;
+    margin: auto;
+    margin-bottom: 150px;
+    box-shadow: 0 0 5px 2px #282a2d;
+
+}
+
+h3
+{
+    text-align: center;
+    font-size:50px;
+    font-family: riday;
+    color:rgb(186, 150, 86);
+    font-weight: bold;
+    margin-top: 3px;
+    text-shadow: #555;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    column-gap: 0px;
+    font-size: 16px; /* Reset the font size for child elements */
+    display: inline-block;
+    width: 40vw;
+    height: 350px;
+    vertical-align: top; 
+    border-right: 0;
+    margin-right: 0px;
+    margin-left: 0;
+    
+}
+
+.box1 {
+    background-image: url("AboutUs/recycle2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+}
+
+.box2 {
+    background-color:cornsilk;
+    text-align: center;
+}
+
+.box2text h2{
+    justify-content: center;
+    margin-top: 60px;
+    display: grid;
+    align-items: center;
+    font-family: riday;
+    font-size: 40px;
+}
+
+.box2text {
+    justify-content: center;
+    margin-top: 60px;
+    display: grid;
+}
+
+.box4 
+{
+    background-image: url("AboutUs/factory.jpg");
+    background-size: cover;
+}
+
+.box3 {
+    background-color: bisque;
+    text-align: center;
+}
+
+.box3text{
+    justify-content: center;
+    margin-top: 1px;
+    margin-top: 90px;
+}
+
+.box3text h2{
+    justify-content: center;
+    margin-top: 1px;
+    margin-top: 90px;
+    font-family: riday;
+    font-size: 40px;
+}
+
+.box5 {
+    background-image: url("AboutUs/timeless2.jpg");
+    background-size: 50% 50px; 
+    background-size: cover; /* Resize the background image to cover the box */
+}
+
+.box6 {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.box6text h2{
+    justify-content: center;
+    margin-top: 90px;
+    font-size: 16px;
+    font-family: riday;
+    font-size: 40px;
+}
+
+.box6text{
+    justify-content: center;
+    margin-top: 90px;
+    font-size: 16px;
+}
+
+
+footer{
+    background-color: #ebecf4;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h4{
+    margin: 10px 0px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #9BA4B5;
+}
+
+footer p{
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 10px;
+}
+
+footer .follow h4{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+footer .follow i{
+    color: #9BA4B5;
+    padding-right: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+footer .install{
+    padding-right: 20px;
+}
+
+footer .install .row img{
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+footer .install img{
+    width: 180px;
+    padding-top: 3px;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    padding-top: 60px;
+    width: 100%;
+    font-size: 40px;
+    color: #9BABB8;
+    text-align: center;
+}
