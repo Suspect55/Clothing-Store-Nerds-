@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="order.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Orders</div>
+
+                    <div class="contentContainer">
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 25px; font-family:'Gill Sans MT';">Order Details</div>
+                                <div class="onlyTable">
+                                <table border="1px" id="orderTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Order Id</th>
+                                            <th>Name of Buyer</th>
+                                            <th>Products Bought</th>
+                                            <th>Subtotal</th>
+                                            <th>Address</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="id">1111</td>
+                                            <td id="name">Yap Hoong Hey</td>
+                                            <td id="product">Signature NERDS Tee</td>
+                                            <td id="total">RM 80</td>
+                                            <td id="address">4443 Hamilton Drive, Windsor Mill, Maryland, 21244</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="id">2222</td>
+                                            <td id="name">Emer Gencyexitonly</td>
+                                            <td id="product">Signature NERDS Graphic Jogger Pants</td>
+                                            <td id="total">RM 100</td>
+                                            <td id="address">116 Lucy Pike, Williamsmouth, Grayside</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="id">3333</td>
+                                            <td id="name">Max Imumoccupancy</td>
+                                            <td id="product">NERDS Long Sleeve Embroidery Shirt</td>
+                                            <td id="total">RM 150</td>
+                                            <td id="address">Ilmaritie 95, Länsi-Janinaniemi, Etelä-Pohjanmaa</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="id">4444</td>
+                                            <td id="name">Emplois Muswashhans</td>
+                                            <td id="product">Signature NERDS Graphic Crop Top</td>
+                                            <td id="total">RM 30</td>
+                                            <td id="address">Camino Cristian, 885, 2º 8º, A Guajardo del Barco, Santa Cruz de Tenerife</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                </div>
+                            
+                                <div class="buttonBar">
+                                <button type="button" id="add" onclick="addOrder()"><i class='bx bx-layer-plus'></i></button> 
+                                <button type="button" id="edit" onclick="editOrder()"><i class='bx bxs-edit-alt' ></i></button>
+                                <button type="button" id="del" onclick="delOrder()"><i class='bx bx-layer-minus' ></i></button>  
+                                </div>
+                            </div>
+                            </div>
+                    
+                            
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+
+        <script src="order.js"></script>
+    </body>
+</html>

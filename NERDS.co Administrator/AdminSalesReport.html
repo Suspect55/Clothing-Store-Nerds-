@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="report.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Sales Report</div>
+
+                    <div class="contentContainer">
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 28px; font-family:'Gill Sans MT'; text-decoration: underline;">Sales Report</div>
+
+                                <div style="width: 100%; display: flex; justify-content: end;">
+                                    <div style="display: flex; flex-direction: column; width: 280px;">
+                                        <div class="summary">
+                                            <div>
+                                                Total Sales:
+                                            </div>
+                                            <div>
+                                                RM 3010000
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="summary">
+                                            <div>
+                                                Sales Tax:
+                                            </div>
+                                            <div>
+                                                RM 10000
+                                            </div>
+                                        </div>
+
+                                        <div class="summary" style="border-top: 1px solid black;">
+                                            <div>
+                                                Total Revenue:
+                                            </div>
+
+                                            <div>
+                                                RM 3000000
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="onlyTable">
+                                <table border="1px" id="reportTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Product ID</th>
+                                            <th>Product Name</th>
+                                            <th>Price</th>
+                                            <th>Quantity Sold</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="id">1111</td>
+                                            <td id="name">Signature Nerds Tee</td>
+                                            <td id="price">RM 80</td>
+                                            <td id="sold">17000</td>
+                                            <td id="total">RM 1360000</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="id">2222</td>
+                                            <td id="name">Signature NERDS Graphic Crop Top</td>
+                                            <td id="price">RM 30</td>
+                                            <td id="sold">15000</td>
+                                            <td id="total">RM 450000</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="id">3333</td>
+                                            <td id="name">Signature NERDS Graphic Jogger Pants</td>
+                                            <td id="price">RM 100</td>
+                                            <td id="sold">9000</td>
+                                            <td id="total">RM 900000</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="id">4444</td>
+                                            <td id="name">Signature Short Denim Skirt</td>
+                                            <td id="price">RM 20</td>
+                                            <td id="sold">15000</td>
+                                            <td id="total">RM 300000 </td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                </div>
+                                <div class="buttonBar">
+                                    <button id="print" onclick="window.print()"><i class='bx bx-printer' style='color:#ffffff'  ></i></button> 
+                                </div>
+                              
+                            </div>
+                            </div>
+                    
+                            
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+
+        <script src="report.js"></script>
+    </body>
+</html>

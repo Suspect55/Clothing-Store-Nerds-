@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="category.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Categories</div>
+
+                    <div class="contentContainer">
+
+                        <div class="fillerHeadCont">
+                            <div class="fillerHead">
+                                <div class="indiFillHead" style="background-color: #def1ff; color: #2397ed;">
+                                    
+                                    <i class='bx bx-category' ></i>
+                                    <div class="fillHeadText">
+                                            <div id="num" class="boldHeadText">4</div>
+                                            <div class="text" style="color: black;">
+                                                Categories
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #fef7da; color: #f7cb48;">
+                                    
+                                    <i class='bx bx-line-chart'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                RM 227000
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Total Revenue
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #ffe7db; color: #d96122;">
+                                    
+                                    <i class='bx bx-crown'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                Men's Top
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Highest Earning category
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #f0dcff; color: #8518e3;">
+                                    
+                                    <i class='bx bx-package' ></i>
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                Women's Top
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Most units sold
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 25px; font-family:'Gill Sans MT';">Category Details</div>
+                                <div class="onlyTable">
+                                <table border="1px" id="categoryTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Category Id</th>
+                                            <th>Category</th>
+                                            <th>Number of items in category</th>
+                                            <th>Total Sales</th>
+                                            <th>Most Popular item</th>
+                                            
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="id">1111</td>
+                                            <td id="name">Men's Top</td>
+                                            <td id="number">23</td>
+                                            <td id="sales">RM 80000</td>
+                                            <td id="popular">Signature NERDS Tee</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="id">2222</td>
+                                            <td id="name">Men's Shorts</td>
+                                            <td id="number">14</td>
+                                            <td id="sales">RM 50000</td>
+                                            <td id="popular">Signature Tapered Denim Pants</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="id">3333</td>
+                                            <td id="name">Women's Top</td>
+                                            <td id="number">27</td>
+                                            <td id="sales">RM 60000</td>
+                                            <td id="popular">Signature NERDS Graphic Crop Top</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="id">4444</td>
+                                            <td id="name">Women's skirts</td>
+                                            <td id="number">17</td>
+                                            <td id="sales">RM 37000</td>
+                                            <td id="popular">Signature Short Denim Skirt</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            
+                                <div class="buttonBar">
+                                <button type="button" id="add" onclick="addCategory()"><i class='bx bx-folder-plus'></i></button> 
+                                <button type="button" id="edit" onclick="editCategory()"><i class='bx bxs-edit-alt' ></i></button>
+                                <button type="button" id="del" onclick="delCategory()"><i class='bx bx-folder-minus' ></i></button>  
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div class="fillerInfo">
+                                <div style="align-self: flex-start; font-size: 20px; font-family: Tahoma; padding-bottom: 24px;">Sales in a year by category</div>
+                                <div style="padding-bottom: 10px;"><img src="categoryGraph.png"></div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #84d0a9; height: 18px; width: 18px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Men's Shorts</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #d0dcab; height: 18px; width: 18px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Women's skirts</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #2c91c3; height: 18px; width: 18px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Women's Top</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #dfb86a; height: 18px; width: 18px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Men's Top</div>
+                                </div>
+
+                            </div>
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+        
+
+        
+ 
+
+        
+
+        <script src="category.js"></script>
+    </body>
+</html>

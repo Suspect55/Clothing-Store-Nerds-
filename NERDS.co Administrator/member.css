@@ -1,0 +1,363 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eff4fa;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* table */
+.tableCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    box-shadow:  0 0 1.5px;
+    max-height: 400px;
+    
+}
+
+.onlyTable{
+    overflow-y: auto;
+    
+}
+
+#memberTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+}
+
+#memberTable thead tr {
+    background-color: #2a364f;
+    color: #ffffff;
+    text-align: left;
+}
+
+#memberTable th, #memberTable td {
+    padding: 12px 15px;
+}
+
+#memberTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#memberTable tbody tr:nth-of-type(even) {
+    background-color: #e7f0ff;
+}
+
+#memberTable tbody tr:last-of-type {
+    border-bottom: 2px solid #2a364f;
+}
+
+
+.outerWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+/* topbar */
+.topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 40px;
+    height: 50px;
+    background-color: #38383b;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.topBarR{
+    letter-spacing: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topBarR div{
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.topBarR div i{
+    scale: 1.5;
+}
+
+@font-face {
+    font-family: 'Riday';
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+.logo{
+    font-family: 'Riday';
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+/* sidebar */
+.sidenav {
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: #204162;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .bot-sidebar a{
+    padding-bottom: 28px;
+}
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ 
+/* main */
+
+.title{
+    background-color: white;
+    padding: 15px;
+    padding-left: 80px;
+    font-size: 28px;
+    font-weight: 550;
+    font-family: "Gill Sans MT";
+    color: rgb(54, 53, 53);
+    box-shadow: 1px 0px 10px rgb(109, 109, 109);
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.fillerHeadCont{
+    padding: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+.fillerHead{
+   
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indiFillHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    width: 190px;
+    border-radius: 15px;
+    box-shadow: 0 0 2.5px;
+}
+
+.indiFillHead i{
+    scale: 3.5;
+    
+    position:relative;
+    padding-top: 15px;
+}
+
+.fillHeadText{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.fillerInfoTextCont{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    align-self: flex-start;
+    font-family: Tahoma;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.fillerInfoText{
+    font-family: 'Lucida Sans'; 
+    font-size: 17px; 
+    display: flex; 
+    align-items: center;
+}
+
+.boldHeadText{
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+    padding-bottom: 7px;
+    font-weight: 600;
+}
+
+.fillHeadText .text{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.innerContentCont{
+    padding-right: 30px;
+}
+
+.fillerInfo{
+    background-color: #222631;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 240px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 20px;
+    height: 480px;
+    box-shadow: 0 0 1.5px;
+    color: white;
+}
+
+
+.icon
+{
+    color: white;
+}
+
+.name
+{
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top-sidebar
+{
+    display: flex;
+    flex-direction: row;
+    background-color: linear-gradient(#797979, #818181);
+    padding: 10px
+}
+
+.general 
+{
+    padding-top: 3%;
+    background: #162a3c;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 4px solid rgb(164, 95, 95);
+    text-align: center;
+}
+
+.bot-sidebar
+{
+    height: 100%;
+    background: #162a3c;
+    padding: 20px;
+}
+
+button i{
+    scale: 2;
+}
+
+.tableCont button{
+    width: 40px;
+    height: 50px;
+}
+
+.buttonBar{
+    
+    letter-spacing: 20px;
+    padding-top: 10px;
+}
+
+button#add{
+    background-color: #7dd6a4;
+    width: 70px;
+    height: 35px;
+}
+
+button#edit{
+    background-color: #fffaa0;
+    width: 70px;
+    height: 35px;
+}
+
+button#del{
+    background-color: #ee4035;
+    width: 70px;
+    height: 35px;
+}
+
+button{
+    cursor: pointer;
+}

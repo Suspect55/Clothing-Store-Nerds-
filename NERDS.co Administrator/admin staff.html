@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="staff.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Staff</div>
+
+                    <div class="contentContainer">
+
+                        <div class="fillerHeadCont">
+                            <div class="fillerHead">
+                                <div class="indiFillHead" style="background-color: #def1ff; color: #2397ed;">
+                                    
+                                    <i class='bx bx-user'></i>
+                                    <div class="fillHeadText">
+                                            <div id="num" class="boldHeadText">4</div>
+                                            <div class="text" style="color: black;">
+                                                Staff members
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #fef7da; color: #f8ce52;">
+                                    
+                                    <i class='bx bx-money-withdraw' ></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                RM 31500
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Salary Paid out
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #ffe7db; color: #d96122;">
+                                    
+                                    <i class='bx bx-briefcase'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                Varmana
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Current CEO
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #f0dcff; color: #8518e3;">
+                                    
+                                    <i class='bx bx-store' ></i>
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                19
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Stores Worldwide
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 25px; font-family:'Gill Sans MT';">Staff Details</div>
+                                <div class="onlyTable">
+                                <table border="1px" id="staffTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Staff Id</th>
+                                            <th>Staff Name</th>
+                                            <th>Staff role</th>
+                                            <th>Salary</th>
+                                            <th>Address</th>
+                                            
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="staffId">1111</td>
+                                            <td id="staffName">Varmana</td>
+                                            <td id="role">CEO</td>
+                                            <td id="salary">RM 10000</td>
+                                            <td id="address">10th Avenue, Chowder Street, California</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="staffId">2222</td>
+                                            <td id="staffName">Ammar</td>
+                                            <td id="role">Logistics Manager</td>
+                                            <td id="salary">RM 7000</td>
+                                            <td id="address">8T-94, Jalan 4, Bandar Ketengah Jaya, Johor</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="staffId">3333</td>
+                                            <td id="staffName">Junn</td>
+                                            <td id="role">Head of IT Department</td>
+                                            <td id="salary">RM 6500</td>
+                                            <td id="address">Heuerplatz 27a, Solingen, 33517, Hessen</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="staffId">4444</td>
+                                            <td id="staffName">Amanda</td>
+                                            <td id="role">CFO</td>
+                                            <td id="salary">RM 8000</td>
+                                            <td id="address">12, impasse de Seguin, SeguinVille, Courtois</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            
+                                <div class="buttonBar">
+                                <button type="button" id="add" onclick="addStaff()"><i class='bx bx-user-plus' ></i></button> 
+                                <button type="button" id="edit" onclick="editStaff()"><i class='bx bxs-edit-alt' ></i></button>
+                                <button type="button" id="del" onclick="delStaff()"><i class='bx bx-user-minus' ></i></button>  
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div class="fillerInfo">
+                                <div style="align-self: flex-start; font-size: 23px; font-family: Tahoma; padding-bottom: 15px;">Expenditure</div>
+                                <div style="padding-bottom: 10px;"><img src="pie2.png"></div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #5dc1ee; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Fixed Cost: RM 300000</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #83d9d2; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Wages: RM 30000</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #ff8a96; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Materials Costs: RM 8000</div>
+                                </div>
+
+                            </div>
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+        
+
+        
+ 
+
+        
+
+        <script src="staff.js"></script>
+    </body>
+</html>

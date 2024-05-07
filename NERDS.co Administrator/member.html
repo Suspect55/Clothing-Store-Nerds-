@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="member.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Member</div>
+
+                    <div class="contentContainer">
+
+                        <div class="fillerHeadCont">
+                            <div class="fillerHead">
+                                <div class="indiFillHead" style="background-color: #def1ff; color: #2397ed;">
+                                    
+                                    <i class='bx bx-user'></i>
+                                    <div class="fillHeadText">
+                                            <div id="num" class="boldHeadText">4</div>
+                                            <div class="text" style="color: black;">
+                                                Members
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #fef7da; color: #f8ce52;">
+                                    
+                                    <i class='bx bx-credit-card'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                RM 5790
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Total Spent by members
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #ffe7db; color: #d96122;">
+                                    
+                                    <i class='bx bx-crown'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                Ladis
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Top Spender
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #f0dcff; color: #8518e3;">
+                                    
+                                    <i class='bx bx-globe'></i>
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                7
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Markets Expanded to
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 25px; font-family:'Gill Sans MT';">Member Details</div>
+                                <div class="onlyTable">
+                                <table border="1px" id="memberTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Member Id</th>
+                                            <th>Member Name</th>
+                                            <th>Phone Number</th>
+                                            <th>Total Spent</th>
+                                            <th>Address</th>
+                                            
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="id">1111</td>
+                                            <td id="name">Hey Hoong Yap</td>
+                                            <td id="phoneNo">0123456789</td>
+                                            <td id="spent">RM 1200</td>
+                                            <td id="address">66, place Reynaud, Moulin, Leveque</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="id">2222</td>
+                                            <td id="name">Emer Gency</td>
+                                            <td id="phoneNo">0198765432</td>
+                                            <td id="spent">RM 700</td>
+                                            <td id="address">2665 Brakus Landing Apt. 482, New Cindy, Vermont</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="id">3333</td>
+                                            <td id="name">Ladis Washerum</td>
+                                            <td id="phoneNo">01654327689</td>
+                                            <td id="spent">RM 2390</td>
+                                            <td id="address">Borgo Evita 22 Appar 39, Borgo Sesto, Lecce</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="id">4444</td>
+                                            <td id="name">Allison Burgers</td>
+                                            <td id="phoneNo">0192837465</td>
+                                            <td id="spent">RM 1500</td>
+                                            <td id="address">佐々木町渚4-7-4, 大垣市, 吉田市</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            
+                                <div class="buttonBar">
+                                <button type="button" id="add" onclick="addMember()"><i class='bx bx-user-plus' ></i></button> 
+                                <button type="button" id="edit" onclick="editMember()"><i class='bx bxs-edit-alt' ></i></button>
+                                <button type="button" id="del" onclick="delMember()"><i class='bx bx-user-minus' ></i></button>  
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div class="fillerInfo">
+                                <div style="align-self: flex-start; font-size: 23px; font-family: Tahoma; padding-bottom: 24px;">Member Patterns</div>
+                                <div style="padding-bottom: 10px;"><img src="memberGraph.png"></div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #cb513f; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Member Spending</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #e3bf67; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Member Website Retention</div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #b8c29d; height: 20px; width: 20px; border-radius: 50%;"></div>
+                                    &nbsp;
+                                    <div class="fillerInfoText">Member Count</div>
+                                </div>
+
+                            </div>
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+        
+
+        
+ 
+
+        
+
+        <script src="member.js"></script>
+    </body>
+</html>

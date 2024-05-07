@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eff4fa;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.onlyTable{
+    overflow-y: auto;
+    
+}
+
+#staffTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+}
+
+#staffTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#staffTable th, #staffTable td {
+    padding: 12px 15px;
+}
+
+#staffTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#staffTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#staffTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+.outerWrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+/* topbar */
+.topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 40px;
+    height: 50px;
+    background-color: #3c3c3d;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.topBarR{
+    letter-spacing: 0;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.topBarR div{
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.topBarR div i{
+    scale: 1.5;
+}
+
+@font-face {
+    font-family: 'Riday';
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+.logo{
+    font-family: 'Riday';
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+/* sidebar */
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background: #204162;
+    box-shadow: 2px 1px 7.3px white;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ 
+/* main */
+
+.title{
+    background-color: white;
+    padding: 15px;
+    padding-left: 80px;
+    font-size: 28px;
+    font-weight: 550;
+    font-family: "Gill Sans MT";
+    color: rgb(54, 53, 53);
+    box-shadow: 1px 0px 10px rgb(109, 109, 109);
+}
+
+.contentContainer{
+    display: flex;
+    text-align: center;
+    padding: 45px 45px 90px 90px;
+    background-color: #eff4fa;
+    
+}
+
+.map
+{
+    display: flex;
+    box-shadow: 8px 0px 20px black;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.icon
+{
+    color: white;
+}
+
+.name
+{
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top-sidebar
+{
+    display: flex;
+    flex-direction: row;
+    background-color: linear-gradient(#797979, #818181);
+    padding: 10px
+}
+
+.general 
+{
+    padding-top: 3%;
+    background: #162a3c;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 4px solid rgb(164, 95, 95);
+    text-align: center;
+}
+
+.bot-sidebar
+{
+    height: 100%;
+    background: #162a3c;
+    padding: 20px;
+}
+
+
+.bot-sidebar a{
+    padding-bottom: 28px;
+}

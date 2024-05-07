@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="product.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Products</div>
+
+                    <div class="contentContainer">
+
+                        <div class="fillerHeadCont">
+                            <div class="fillerHead">
+                                <div class="indiFillHead" style="background-color: #def1ff; color: #2397ed;">
+                                    
+                                    <i class='bx bxs-barcode' ></i>
+                                    <div class="fillHeadText">
+                                            <div id="num" class="boldHeadText">4</div>
+                                            <div class="text" style="color: black;">
+                                                Products
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #fef7da; color: #f7cb48;">
+                                    
+                                    <i class='bx bx-line-chart'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                RM 345000
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Total Sales
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #ffe7db; color: #d96122;">
+                                    
+                                    <i class='bx bx-crown'></i>
+
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText" style="font-size: 20px;">
+                                                Sig. NERDS Tee
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Highest Earning Product
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead" style="background-color: #f0dcff; color: #8518e3;">
+                                    
+                                    <i class='bx bx-package' ></i>
+                                    <div class="fillHeadText">
+                                            <div class="boldHeadText">
+                                                71000
+                                                
+                                            </div>
+                                            <div class="text" style="color: black;">
+                                                Total Units Sold
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="tableCont">
+                                <div style="align-self: flex-start; font-size: 25px; font-family:'Gill Sans MT';">Product Details</div>
+                                <div class="onlyTable">
+                                <table border="1px" id="productTable">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Id</th>
+                                            <th>Product</th>
+                                            <th>Number of units sold</th>
+                                            <th>Total Sales</th>
+                                            <th>Most popular size</th>
+                                            
+                                        </tr>
+                                    </thead>
+                
+                                    <tbody>
+                                        <tr id="row1">
+                                            <td id="id">1111</td>
+                                            <td id="name">Signature Nerds Tee</td>
+                                            <td id="number">17000</td>
+                                            <td id="sales">RM 120000</td>
+                                            <td id="popular">M</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row2">
+                                            <td id="id">2222</td>
+                                            <td id="name">Signature NERDS Graphic Crop Top</td>
+                                            <td id="number">30000</td>
+                                            <td id="sales">RM 75000</td>
+                                            <td id="popular">S</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row3">
+                                            <td id="id">3333</td>
+                                            <td id="name">Signature NERDS Graphic Jogger Pants</td>
+                                            <td id="number">9000</td>
+                                            <td id="sales">RM 90000</td>
+                                            <td id="popular">L</td>
+                                            
+                                        </tr>
+                
+                                        <tr id="row4">
+                                            <td id="id">4444</td>
+                                            <td id="name">Signature Short Denim Skirt</td>
+                                            <td id="number">15000</td>
+                                            <td id="sales">RM 60000</td>
+                                            <td id="popular">S</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            
+                                <div class="buttonBar">
+                                <button type="button" id="add" onclick="addProduct()"><i class='bx bx-layer-plus'></i></button> 
+                                <button type="button" id="edit" onclick="editProduct()"><i class='bx bxs-edit-alt' ></i></button>
+                                <button type="button" id="del" onclick="delProduct()"><i class='bx bx-layer-minus' ></i></button>  
+                                </div>
+                            </div>
+                            </div>
+                    
+                            <div class="fillerInfo">
+                                <div style="align-self: flex-start; font-size: 15px; font-family: Tahoma; padding-bottom: 5px; color: #4ba362;">Past 7 Days Sales</div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div class="fillerInfoText" style="color: #4ba362;">RM 200,000.00</div>
+                                </div>
+
+                                <div style="padding-bottom: 15px; border-bottom: 1px solid rgb(138, 136, 136)"><img src="productGraph1.png"></div>
+
+                                <div style="align-self: flex-start; font-size: 15px; font-family: Tahoma; padding-top: 10px; padding-bottom: 5px; color: #e89f3c; font-weight: 500;">Past 12 Months Sales</div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div class="fillerInfoText" style="color: #e89f3c;">RM 3,000,000.00</div>
+                                </div>
+
+                                <div><img src="productGraph.png"></div>
+                            </div>
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+        
+
+        
+ 
+
+        
+
+        <script src="product.js"></script>
+    </body>
+</html>

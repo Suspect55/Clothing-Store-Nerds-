@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dashboard.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <title>Admin Dashboard</title>
+    </head>
+    
+    <body>
+        
+        <div class="outerWrapper">
+            
+            <div id="mySidenav" class="sidenav">
+                <div class="closebtn">
+                    <a href="#"><i class='bx bx-x' style="font-size:30px;cursor:pointer; padding-left: 90%;" class="closebtn" onclick="closeNav()"></i></a>
+                </div>
+                
+                <div>
+                    <div class="top-sidebar">
+                        <div class="icon">
+                            <i class="bx bxs-user-circle" style="font-size: 60px;"></i>
+                        </div>
+                        <div class="name">
+                            Junn Chang <br> 
+                            <i class='bx bx-radio-circle-marked' style="color: green">online</i>
+                        </div>
+                    </div>
+                    <div class="general">
+                        General
+                    </div>
+                </div>
+                <div class="bot-sidebar">
+                    <a href="AdminDashboard.html">Dashboard</a>
+                    
+                    <a href="admin staff.html">Staffs</a>
+                    
+                    <a href="member.html">Members</a>
+                    
+                    <a href="category.html">Categories</a>
+                    
+                    <a href="product.html">Products</a>
+                    
+                    <a href="order.html">Orders</a>
+                    
+                    <a href="AdminContacts.html">Contact</a>
+                    
+                    <a href="AdminMap.html">Map</a>
+                    
+                    <a href="AdminSalesReport.html">Sales Report</a>
+                </div>
+            </div>
+         
+
+            <div class="mainContainer">
+                <div class="topBar">
+                    <div style="flex-direction: row; display: flex; align-items: center;">
+                        <span style="font-size:30px;cursor:pointer;color: goldenrod;" onclick="openNav()">&#9776;</span>
+                        <div class="logo" style="letter-spacing: 0; display: flex; flex-direction: row;">NERDS<div style="font-size: 23px; align-self: flex-end; color: goldenrod;">Admin</div></div>
+                    </div>
+
+                    <div class="topBarR">
+                        <div><i class='bx bx-envelope' style='color:#ffffff' ></i></div>
+                        <div><i class='bx bxs-bell' style='color:#ffffff' ></i></div>
+                    </div>
+                </div>
+
+                <div class="title">Admin Dashboard</div>
+
+                    <div class="contentContainer">
+
+                        <div class="fillerHeadCont">
+                            <div class="fillerHead">
+                                <div class="indiFillHead">
+                                    <div style="background-color: #a7bed3; height: 100px; width: 100px;  display: flex; align-items: flex-start; justify-content: center; padding-top: 5px; border-radius: 10px;">
+                                    <i class='bx bx-line-chart' style="color: rgb(2, 2, 69); height: 5px;"></i>
+                                    </div>
+
+                                    <div class="fillHeadText">
+                                            <div id="num" class="text">Market Value</div>
+                                            <div class="boldHeadText">
+                                                RM 1,000,000,000
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead">
+                                    
+                                    <div style="background-color: #e9fcac; height: 100px; width: 100px;  display: flex; align-items: flex-start; justify-content: center; padding-top: 5px; border-radius: 10px;">
+                                        <i class='bx bx-package' style="color: rgb(2, 2, 69); height: 5px;"></i>
+                                        </div>
+    
+                                        <div class="fillHeadText">
+                                                <div id="num" class="text">Units Sold</div>
+                                                <div class="boldHeadText">
+                                                    300,000
+                                                </div>
+                                        </div>
+                                    
+                                </div>
+
+                                <div class="indiFillHead">
+                                    
+                                    <div style="background-color: #ffcaaf; height: 100px; width: 100px;  display: flex; align-items: flex-start; justify-content: center; padding-top: 5px; border-radius: 10px;">
+                                        <i class='bx bx-group' style="color: rgb(2, 2, 69); height: 5px;"></i>
+                                        </div>
+    
+                                        <div class="fillHeadText">
+                                                <div id="num" class="text">Website Traffic</div>
+                                                <div class="boldHeadText">
+                                                    1,000,000 users
+                                                </div>
+                                        </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="innerContentCont">
+                            <div class="stockCont">
+                                <div style="align-self: flex-start; font-size: 30px; font-family:'Gill Sans MT';">Market Price</div>
+                                <div style="display: flex; flex-direction: row;">
+                                    <div>
+                                    <img src="stock2.png">
+                                    </div>
+                                    <div class="stockInfo">
+                                        <div style="line-height: normal;">
+                                            <div>Nerds.Co</div>
+                                            <div style="font-size: 20px;">NRD</div>
+                                        </div>
+                                        <div style="font-size: 25px; font-weight: 600; ">RM 201.68</div>
+                                        <div style="background-color: #e6f4ea; width: fit-content; padding-left: 15px; padding-right: 15px; border-radius: 10px; font-size: 22px;"><i class='bx bx-up-arrow-alt' style='color:#348750; scale: 1.5;'  ></i> &nbsp;1.07</div>
+                                    </div>
+                                </div>
+                            
+                                
+                            </div>
+                            </div>
+                    
+                            <div class="fillerInfo">
+                                <div style="align-self: flex-start; font-size: 23px; font-family: Tahoma; padding-bottom: 15px;">Company Growth</div>
+                                <div style="padding-bottom: 10px;"><img src="growth.png"></div>
+
+                                <div class="fillerInfoTextCont" style="padding-bottom: 20px;">
+                                   
+                                    <div style="background-color: #ececff; scale: 1.5; padding: 4px; border-radius: 6px;">
+                                        <i class='bx bx-dollar' style='color:#6c6fff;'  ></i>
+                                    </div>
+                                    
+                                    <div style="color: #5b6b7c;">
+                                        &nbsp;&emsp; +RM 30,000,000
+                                    </div>
+                                </div>
+
+                                <div class="fillerInfoTextCont">
+                                    <div style="background-color: #dff7fc; scale: 1.5; padding: 4px; border-radius: 6px;">
+                                        <i class='bx bx-user' style='color:#06c4ec' ></i>
+                                    </div>
+
+                                    <div style="color: #5b6b7c;">
+                                        &nbsp;&emsp; +600000 users
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+            
+                        </div>
+                    </div>
+
+            </div>
+
+
+        </div> 
+        
+
+        
+ 
+
+        
+
+        <script src="dashboard.js"></script>
+    </body>
+</html>
