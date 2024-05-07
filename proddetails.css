@@ -1,0 +1,512 @@
+body{
+    background-color: #e3e6f3;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: riday;
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.search {
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.glass:hover{
+    color: #088178;
+}
+
+.search:hover input{
+    width: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav-logo, .logo{
+    font-family: 'Riday';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .a{
+    font-size: 18px;
+    font-family: Trebuchet MS;
+}
+
+.navbar li .a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li:not(:first-child) a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li:not(:first-child) a.active::after, 
+.navbar #nav-select:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a{
+    color: #666666;
+}
+
+.dropdown a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+/*MAIN CSS Starts*/
+
+@font-face {
+    font-family: "barlow";
+    src: url(Barlow-Light.ttf);
+}
+
+.detailboxdiv {
+    height: 105vh;
+    width: 35%;
+    float: right;
+    border-radius: 15px;
+    margin-top: 11px;
+    margin-right: 100px;
+    padding: 5px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-family: barlow;
+    padding-right: 50px;
+    
+}
+
+ul {
+    list-style: circle;
+    padding-left: 18px;
+}
+
+ul li {
+    text-align: left;/* Optional: add some spacing between list items */
+}
+
+.pricediv {
+    display: flex;
+}
+
+.pricediv a {
+    margin-top: 25px;
+}
+
+.pricediv h1 {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.sizediv {
+    display: flex;
+}
+
+
+
+.rounded-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #b6b8c4;
+    background-color: #ffffff; 
+    color: #000000; 
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.rounded-button.clicked {
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+.rounded-button:hover {
+    background-color: #000000; 
+    color: #f8f8f8;
+}
+
+.quantitydiv
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.decbutton {
+    margin-left: 5px;
+    height: 35px;
+    width: 35px;
+    background-color: #d1d1d1a0;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Add transition for a smooth effect */
+}
+
+#counter {
+    background-color: #d1d1d1a0;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    transition: background-color 0.3s; 
+    font-size: 18px;
+}
+
+.incbutton {
+    height: 35px;
+    width: 35px;
+    background-color: #d1d1d1a0;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s; 
+}
+
+.decbutton:hover,
+.incbutton:hover,
+#counter:hover {
+    background-color: #adadad81; /* Change the background color on hover */
+}
+
+.addtobagbttn
+{
+    background-color: #ffffff;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 2px #9BA4B5;
+}
+  
+.addtobagbttn::before,
+.addtobagbttn::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+  
+.addtobagbttn::before {
+    border-top-width: 2px;
+    border-right-width: 2px;
+}
+  
+.addtobagbttn::after {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+  
+.addtobagbttn:hover {
+    color: #ffffff;
+    background-color: #000;
+    font-weight: bold;
+}
+
+
+  
+.addtobagbttn:hover::before,
+.addtobagbttn:hover::after {
+    border-color: #f8f8f8;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+  
+.addtobagbttn:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+  
+.addtobagbttn:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+  
+
+.color {
+    width: 37px;
+    height: 35px;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    cursor: pointer; /* Add cursor style to indicate clickable */
+}
+
+.color:hover{
+    border: 2px solid;
+}
+
+.color.clicked {
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+
+.addtowishlist {
+    background-color: #ffffff;
+    transition: color 0.25s, background-color 0.25s;
+    position: relative;
+    color: #000000;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 2px #9BA4B5;
+}
+  
+.addtowishlist::before,
+.addtowishlist::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+}
+  
+.addtowishlist::before {
+    border-top-width: 2px;
+    border-right-width: 2px;
+}
+  
+.addtowishlist::after {
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+}
+  
+.addtowishlist:hover {
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+}
+  
+.addtowishlist:hover::before,
+.addtowishlist:hover::after {
+    border-color: #f8f8f8;
+    width: 100%;
+    height: 100%;
+}
+  
+.addtowishlist:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+  
+.addtowishlist:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+  
+.imagediv {
+    margin-top: 33px;
+    width: 50%; 
+    height: 80vh;
+    margin-left: auto;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.imagediv img {
+    height: 97%;
+    width: 85%; 
+    object-fit:fill; 
+    border-radius: 8px;
+    box-shadow: #ffffff;
+}
+
+.buttondiv{
+    display: flex;
+    flex-direction: column;
+    font-family: barlow;
+    font-size: 30px;
+}
+
+/* FOOTER CSS*/
+
+#section-p1{
+    padding: 30px 115px;
+}
+
+footer {
+    background-color: #ebecf4;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0;
+    width: 96.7%; /* Change from 99% to 100% to ensure full width */
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h4 {
+    margin: 10px 0px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #9BA4B5;
+}
+
+footer p {
+    font-size: 17px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 10px;
+}
+
+footer .follow h4 {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+footer .follow i {
+    color: #9BA4B5;
+    padding-right: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+footer .install {
+    padding-right: 20px;
+}
+
+footer .install .row img {
+    width: 280px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+footer .install img {
+    width: 180px;
+    padding-top: 3px;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    font-size: 14px;
+    color: #9BABB8;
+    text-align: center;
+    padding-top: 20px; 
+}

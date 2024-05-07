@@ -1,0 +1,335 @@
+body{
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Riday';
+    src: url(Ridayparcia-JRgqn.otf);
+}
+
+.search {
+    display: flex;
+    cursor: pointer;  
+}
+
+.glass:hover{
+    color: #088178;
+}
+
+.search:hover input{
+    width: 200px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.search input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.nav-logo, .logo{
+    font-family: 'Riday';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .a{
+    font-size: 18px;
+    font-family: Trebuchet MS;
+}
+
+.navbar li .a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+
+.navbar li:not(:first-child) a:hover,
+.navbar li a.active{
+    color: #088178;
+}
+
+.navbar li:not(:first-child) a.active::after, 
+.navbar #nav-select:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a{
+    color: #666666;
+}
+
+.dropdown a:hover {
+    color: #088178;
+    text-decoration: underline;
+}
+
+.login-container
+{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.container{
+    position: absolute;
+    left: 52.5%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 550px;
+    background-position: center;
+    background-size:cover ;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 80%;
+    color: #000;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.item .logo{
+    color: #000;
+    font-size: 35px;
+    padding-top: 80px;
+    font-family: 'Riday';
+}
+
+.text-item h2{
+    font-size: 35px;
+    line-height: 1.5;
+    text-shadow: 0.9px 0.9px 1px #909090;
+}
+
+.text-item p{
+    font-size: 18px;
+    color: #3D3B40;
+}
+.social-icon a i{
+    color: #191919b5;
+    font-size: 15px;
+    padding-right: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: .5s ease;
+    padding-left: 1px;
+}
+.social-icon a:hover i{
+    transform: scale(1.1);
+}
+.container .login-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 115%;
+    color: #000;
+    backdrop-filter: blur(10px);
+}
+
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 28.5px;
+}
+
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid#000;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+    top: -5px;
+}
+.remember-password{
+    font-size: 17px;
+    font-weight: 500;
+    margin: -15px 0 15px ;
+    display: flex;
+    justify-content: space-between;
+    color: #1a1a1a;
+}
+.remember-password label input{
+    accent-color:#000;
+    margin-right: 3px;
+
+}
+.remember-password a{
+    color: #2865d1;
+    text-decoration: none;
+}
+.remember-password a:hover{
+    text-decoration: underline;
+    color: #2865d1;
+}
+
+.btn{
+    background: #000;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #000;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #191919;
+}
+
+.create-account{
+    font-size: 17px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: #2865d1;
+    font-weight: 600px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.create-account p a:hover{
+    text-decoration: underline;
+}
+
+.COPYRIGHT
+{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #9BABB8;
+}
